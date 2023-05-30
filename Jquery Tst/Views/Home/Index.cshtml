@@ -7,6 +7,26 @@
 <title>HEllo</title>
 <script src="~/Scripts/jquery-3.4.1.js"></script>
 <head>
-
+    <body>
+        <div>
+            <h1 id="hi">Hello Bangladesh</h1>
+            <button id="bt1" onclick="BtnClick()"> ENTER</button>
+        </div>
+    </body>
 </head>
 </html>
+<script>
+    $(document).ready(function () {
+        alert("REDY ");
+        $("#bt1").text("Sheii");
+
+    });
+
+    function BtnClick() {
+        $("#bt1").text("Confirmed");
+        var count;
+        count = 0;
+        count++;
+        $("#hi").text(count);
+    }
+</script>
