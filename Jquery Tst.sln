@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jquery Tst", "Jquery Tst\Jquery Tst.csproj", "{B5333834-D5D3-426F-B092-E90DD9B67788}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jquery_Tst", "Jquery Tst\Jquery_Tst.csproj", "{B5333834-D5D3-426F-B092-E90DD9B67788}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
