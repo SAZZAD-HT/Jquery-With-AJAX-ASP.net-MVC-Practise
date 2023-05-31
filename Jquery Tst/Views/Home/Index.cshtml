@@ -10,23 +10,41 @@
     <body>
         <div>
             <h1 id="hi">Hello Bangladesh</h1>
+          
+        </div>
+        <div>
+            <h2>Id</h2>-<h2 id="sid"></h2>
+            <h2>Name</h2>-<h2 id="sname"></h2>
+            <h2>age</h2>-<h2 id="sage"></h2>  
             <button id="bt1" onclick="BtnClick()"> ENTER</button>
         </div>
     </body>
 </head>
 </html>
 <script>
-    $(document).ready(function () {
-        alert("REDY ");
-        $("#bt1").text("Sheii");
+    //$(document).ready(function () {
+    //    alert("REDY ");
+    //    $("#bt1").text("Sheii");
 
-    });
+    //});
 
     function BtnClick() {
-        $("#bt1").text("Confirmed");
-        var count;
-        count = 0;
-        count++;
-        $("#hi").text(count);
+        
+        $.ajax({
+            url: "/Home/getstudent",
+            method: "GET",
+            success: function (data) {
+                data = JSON.parse(data);
+                console.log(data);
+                $("#sid").text(data.id);
+                $("#sname").text(data.Name);
+                $("#sage").text(data.age);
+
+
+            },
+            error: function (err) {
+                console.error();
+            }
+        })
     }
 </script>
